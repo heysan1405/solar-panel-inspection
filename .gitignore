@@ -1,0 +1,63 @@
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# JavaScript dependencies and build output
+frontend/node_modules/
+frontend/dist/
+frontend/public/sample-el.jpg
+frontend/public/sample-annotated.jpg
+
+# Local datasets, repaired copies, labels, and generated audit samples
+/solar_cell_EL_image/
+/yolo_dataset/
+/yolo_dataset_repaired_8class/
+/label_audit/
+/inspection_test/
+/PVEL-AD-main/PVEL-AD-main/PVELAD/
+/PVEL-AD-main/PVEL-AD-main/EL2021.png
+/excluded_annotations.csv
+/validation_audit.csv
+/validation_audit_summary.txt
+
+# Training runs, checkpoints, model weights, and inference artifacts
+/PVEL_Detection_Repaired/
+/evaluation_results/
+/runs/
+/weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+
+# Ultralytics and generated prediction outputs
+**/*.cache
+**/predict*/
+**/inference*/
+*_pred.jpg
+*_labels.jpg
+*_annotated.jpg
+confusion_matrix*.png
+Box*_curve.png
+results.csv
+results.png
+train_batch*.jpg
+labels.jpg
+PVEL-AD-main/PVEL-AD-main/Industrial_Data_Access_Form.docx
+# Logs and editor/OS files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
